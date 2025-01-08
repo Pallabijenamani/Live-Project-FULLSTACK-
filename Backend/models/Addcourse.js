@@ -1,13 +1,12 @@
-const mongoose = require("mongoose"); 
+const mongoose = require("mongoose"); // CJS
 
-//schema
+// schema
+
 const AddcourseSchema = mongoose.Schema({
-    courseName : String,
+  courseName: String,
 });
 
-//model(wrapper)
-// const Addcourese = mongoose.model("Addcourse" , AddcourseSchema);
+// model
+// const Addcourse = mongoose.model("Addcourse", AddcourseSchema);
 
-//directly
-
-module.exports = mongoose.model("Addstudents",AddcourseSchema);
+module.exports = mongoose.model("Addcourse", AddcourseSchema);
